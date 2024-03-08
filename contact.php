@@ -86,8 +86,8 @@
 						<div class="col-lg-6 col-md-5 col-12">
 							<!-- Contact -->
 							<ul class="top-link">
-								<li><a href="#">About</a></li>
-								<li><a href="#">Members</a></li>
+								<li><a href="aboutus.php">About</a></li>
+								<li><a href="members.php">Members</a></li>
 								<li><a href="#">Contact</a></li>
 								<li><a href="#">FAQ</a></li>
 							</ul>
@@ -96,7 +96,7 @@
 						<div class="col-lg-6 col-md-7 col-12">
 							<!-- Top Contact -->
 							<ul class="top-contact">
-								<li><i class="fa fa-phone"></i>+880 1234 56789</li>
+								<li><i class="fa fa-phone"></i>+91123456789</li>
 								<li><i class="fa fa-envelope"></i><a href="mailto:support@yourmail.com">jainsangh@gmail.com</a></li>
 							</ul>
 							<!-- End Top Contact -->
@@ -113,7 +113,7 @@
 							<div class="col-lg-3 col-md-3 col-12">
 								<!-- Start Logo -->
 								<div class="logo">
-									<a href="index.html"><img src="img/logo.png" alt="#"></a>
+									<a href="index.php"><img src="img/logo.png" alt="#"></a>
 								</div>
 								<!-- End Logo -->
 								<!-- Mobile Nav -->
@@ -125,24 +125,22 @@
 								<div class="main-menu">
 									<nav class="navigation">
 										<ul class="nav menu">
-											<li class="active"><a href="#">Home <i class="icofont-rounded-down"></i></a>
-												<ul class="dropdown">
-													<li><a href="index.html">Home Page 1</a></li>
-												</ul>
+											<li class="active"><a href="index.php">Home</a>
+												
 											</li>
-											<li><a href="#">Members </a></li>
-											<li><a href="#">Services </a></li>
+											<li><a href="members.php">Members </a></li>
+											<li><a href="#">Masatiji Availability </a></li>
 											<li><a href="#">Literature <i class="icofont-rounded-down"></i></a>
 												<ul class="dropdown">
-													<li><a href="404.html">In progress</a></li>
+													<li><a href="404.php">In progress</a></li>
 												</ul>
 											</li>
 											<!-- <li><a href="#">Blogs <i class="icofont-rounded-down"></i></a>
 												<ul class="dropdown">
-													<li><a href="blog-single.html">Blog Details</a></li>
+													<li><a href="blog-single.php">Blog Details</a></li>
 												</ul>
 											</li> -->
-											<li><a href="contact.html">Contact Us</a></li>
+											<li><a href="contact.php">Contact Us</a></li>
 										</ul>
 									</nav>
 								</div>
@@ -150,7 +148,7 @@
 							</div>
 							<div class="col-lg-2 col-12">
 								<div class="get-quote">
-									<a href="appointment.html" class="btn">Book Paramseva</a>
+									<a href="appointment.php" class="btn">Book Arhamseva</a>
 								</div>
 							</div>
 						</div>
@@ -169,7 +167,7 @@
 						<div class="col-12">
 							<h2>Contact Us</h2>
 							<ul class="bread-list">
-								<li><a href="index.html">Home</a></li>
+								<li><a href="index.php">Home</a></li>
 								<li><i class="icofont-simple-right"></i></li>
 								<li class="active">Contact Us</li>
 							</ul>
@@ -182,7 +180,6 @@
 				
 		<!-- Start Contact Us -->
 		<section class="contact-us section">
-			<div cl
 			<div class="container">
 				<div class="inner">
 					<div class="row"> 
@@ -309,9 +306,8 @@
 									<div class="col-lg-6 col-md-6 col-12">
 										<ul>
 											<li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Home</a></li>
-											<li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>About Us</a></li>
-											<li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Services</a></li>
-											<li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Our Services</a></li>
+											<li><a href="aboutus.php"><i class="fa fa-caret-right" aria-hidden="true"></i>About Us</a></li>
+											<li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Masatiji Availability</a></li>
 											<li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Other Links</a></li>	
 										</ul>
 									</div>

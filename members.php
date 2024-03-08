@@ -175,7 +175,7 @@
 													<li><a href="blog-single.html">Blog Details</a></li>
 												</ul>
 											</li> -->
-											<li><a href="contact.html">Contact Us</a></li>
+											<li><a href="contact.php">Contact Us</a></li>
 										</ul>
 									</nav>
 								</div>
@@ -183,7 +183,7 @@
 							</div>
 							<div class="col-lg-2 col-12">
 								<div class="get-quote">
-									<a href="appointment.html" class="btn">Book Paramseva</a>
+									<a href="appointment.html" class="btn">Book Arhamseva</a>
 								</div>
 							</div>
 						</div>
@@ -311,8 +311,7 @@
 										<ul>
 											<li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Home</a></li>
 											<li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>About Us</a></li>
-											<li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Services</a></li>
-											<li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Our Events</a></li>
+											<li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Masatiji Availability</a></li>
 											<li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Other Links</a></li>	
 										</ul>
 									</div>

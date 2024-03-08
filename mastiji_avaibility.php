@@ -44,22 +44,53 @@
 		
     </head>
 	<style>
-		.join-us-button {
-			display: inline-block;
-			padding: 10px 20px;
-			margin-top: 20px;
-			background: #1A76D1; /* Green color, you can change this */
-			color: #fff; /* White text */
-			text-decoration: none;
-			border-radius: 5px;
-			transition: background-color 0.3s ease;
-		}
+        /* Styles for Guru Boxes and Welcome Text */
+        .guru-box {
+            background-color: #1A76D1;
+            border: 1px solid #1566C7;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+            text-align: center;
+            color: #ffffff !important; /* Important to ensure it overrides other styles */
+        }
 
-		.join-us-button:hover {
-			background-color: #1A76D1; /* Darker green color on hover */
-			/* 3498db */
-		}
-	</style>
+        .guru-box h3 {
+            color: #ffffff !important;
+        }
+
+        .guru-box p {
+            color: #ffffff; /* Set text color to white for all p elements within .guru-box */
+        }
+
+
+        .welcome-text {
+            font-size: 18px;
+            text-align: center;
+            color: #000000;
+            margin-bottom: 20px;
+        }
+
+        /* Style for Add Availability Button */
+        .add-availability-btn {
+            background-color: #1A76D1;
+            color: #ffffff !important;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+
+        /* Hover effect for the button */
+        .add-availability-btn:hover {
+            background-color: #1566C7;
+        }
+
+    </style>
     <body>
 	
 		<!-- Preloader -->
@@ -184,11 +215,11 @@
 				<div class="bread-inner">
 					<div class="row">
 						<div class="col-12">
-							<h2>About Us</h2>
+							<h2>Masatiji Availability</h2>
 							<ul class="bread-list">
 								<li><a href="index.php">Home</a></li>
 								<li><i class="icofont-simple-right"></i></li>
-								<li class="active">About Us</li>
+								<li class="active">Masatiji Availability</li>
 							</ul>
 						</div>
 					</div>
@@ -197,59 +228,56 @@
 		</div>
 		<!-- End Breadcrumbs -->
 	
-		<!-- Start Portfolio Details Area -->
-		<section class="pf-details section">
-			<div class="container">
-				<div class="row">
-					<div class="col-12">
-						<div class="inner-content">
-							<!-- <div class="image-slider">
-								<div class="pf-details-slider">
-									<img src="img/call-bg.jpg" alt="#">
-									<img src="img/call-bg.jpg" alt="#">
-									<img src="img/call-bg.jpg" alt="#">
-								</div>
-							</div> -->
-							<!-- <div class="date">
-								<ul>
-									<li><span>Category :</span> Heart Surgery</li>
-									<li><span>Date :</span> April 20, 2019</li>
-									<li><span>Client :</span> Suke Agency</li>
-									<li><span>Ags :</span> Typo</li>
-								</ul>
-							</div> -->
-							<div class="body-text">
-								<h3>About Us</h3>
-								<p>Welcome to the Manhar Plot Jain Sangh – a digital hub dedicated to fostering unity, knowledge, and connection within the Jain community.</p>
-								<h3>Our Vision</h3>
-								<p>At Manhar Plot Jain Sangh, we envision a thriving global Jain community where individuals, families, and generations come together to celebrate their rich cultural heritage, share wisdom, and support each other in their spiritual journeys.</p>
-								<h3>Who We Are</h3>
-								<p>We are a passionate team at Manhar Plot Jain Sangh, driven by a shared commitment to empower and uplift the Jain community. Our diverse backgrounds and experiences converge to create a platform that resonates with the unique needs and aspirations of Jain individuals worldwide.</p>
-								<h3>Our Mission</h3>
-								<p>Our mission is to provide a comprehensive digital space that seamlessly integrates tradition with technology, offering a range of features and resources tailored to the contemporary needs of the Jain community.</p>
-								<h3>What Sets Us Apart</h3>
-								<p>- Community-Centric Approach: We prioritize the voices and values of our community in every aspect of our platform.</p>
-								<p>- Inclusivity: Manhar Plot Jain Sangh is designed to be inclusive, catering to the diverse demographics, traditions, and languages within the Jain community.</p>
-								<p>- Innovation: We embrace technological innovation to enhance accessibility, connectivity, and engagement among Jain community members.</p>
-								<h3>Join Us in this Journey</h3>
-								<p>- Whether you are a seasoned member of the Jain community or someone eager to explore and learn, Manhar Plot Jain Sangh invites you to join us on this enriching journey. Together, let's celebrate our heritage, foster connections, and contribute to the vibrant tapestry of the Jain way of life.</p>
-								<a href="#join-us-section" class="join-us-button">Join Us</a>
+		<!-- Guru Availability Section -->
+        <section id="guru-availability" class="section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <p class="welcome-text">Welcome to Manharplot Jain Sangh! Here you will be able to see the Masatiji who are available for this Chaturmaas.</p>
+                        <!-- Updated button to navigate to another PHP page -->
+                        <a href="add_availability.php" class="add-availability-btn">Add Availability</a>
+                    </div>
 
-								<div class="share">
-									<h4>Share Now -</h4>
-									<ul>
-										<li><a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
-										<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-										<li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-									</ul>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- End Portfolio Details Area -->
+                    <?php
+                    // Include the database connection file
+                    include 'db_connection.php';
+
+                    // Fetch availability data from the database
+                    $sql = "SELECT * FROM availability";
+                    $result = $conn->query($sql);
+
+                    // Display Guru boxes with availability data
+                    if ($result->num_rows > 0) {
+                        while ($row = $result->fetch_assoc()) {
+                            echo '<div class="col-lg-4 col-md-6 col-12">';
+                            echo '<div class="guru-box">';
+                            echo '<h3>' . $row['name'] . '</h3>';
+                            echo '<p>Location: ' . $row['location'] . '</p>';
+                            
+                            // Display availability status
+                            echo '<p>Availability: ' . ($row['status'] == 'Available' ? 'Available' : 'Not Available') . '</p>';
+                            
+                            // Display extra note
+                            echo '<p>Extra Note: ' . $row['extra_note'] . '</p>';
+                            
+                            echo '</div>';
+                            echo '</div>';
+                        }
+                    } else {
+                        echo '<div class="col-12">';
+                        echo '<p>No availability data found.</p>';
+                        echo '</div>';
+                    }
+
+                    // Close the database connection
+                    $conn->close();
+                    ?>
+
+                </div>
+            </div>
+        </section>
+        <!-- End Guru Availability Section -->
+
 		
 		<!-- Footer Area -->
 		<footer id="footer" class="footer ">

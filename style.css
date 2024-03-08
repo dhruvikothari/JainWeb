@@ -33,7 +33,7 @@ Version:	1.1
 	+ Latest Blog CSS
 	+ Blog Single CSS
 	+ Blog Sidebar CSS
-* Appointment CSS
+* Arhamseva CSS
 * Login CSS
 * Register CSS
 * Faq CSS
@@ -2714,36 +2714,36 @@ body{
 =====================*/
 
 /*==========================
-	Start Appointment CSS
+	Start Arhamseva CSS
 ============================*/
-.appointment{
+.Arhamseva{
 	background:#fff;
 	padding-top:100px;
 }
-.appointment.single-page {
+.Arhamseva.single-page {
 	background: #fff;
 	padding-top: 100px 0;
 	padding: 0;
 	padding: 100px 0;
 }
-.appointment.single-page .appointment-inner {
+.Arhamseva.single-page .Arhamseva-inner {
 	padding: 40px;
 	box-shadow: 0px 0px 10px #00000024;
 	border-radius: 5px;
 }
-.appointment.single-page .title{}
-.appointment.single-page .title h3 {
+.Arhamseva.single-page .title{}
+.Arhamseva.single-page .title h3 {
 	font-size: 25px;
 	display: block;
 	margin-bottom: 10px;
 	font-weight:600;
 }
-.appointment.single-page .title p{}
-.appointment .form{
+.Arhamseva.single-page .title p{}
+.Arhamseva .form{
 	margin-top:30px;
 }
-.appointment .form .form-group{}
-.appointment .form input {
+.Arhamseva .form .form-group{}
+.Arhamseva .form input {
 	width: 100%;
 	height: 50px;
 	border: 1px solid #eee;
@@ -2755,7 +2755,7 @@ body{
 	border-radius:0;
 	border-radius: 4px;
 }
-.appointment .form textarea{
+.Arhamseva .form textarea{
 	width: 100%;
 	height:200px;
     padding: 18px;
@@ -2764,7 +2764,7 @@ body{
 	resize:none;
 	border-radius: 4px;
 }
-.appointment .form-group .nice-select{
+.Arhamseva .form-group .nice-select{
 	width: 100%;
 	height: 50px;
 	line-height: 50px;
@@ -2777,74 +2777,74 @@ body{
 	border-radius: 4px;
 	font-weight:400;
 }
-.appointment .form-group .nice-select::after {
+.Arhamseva .form-group .nice-select::after {
 	right: 20px;
 	color: #757575;
 }
-.appointment .form-group .list{
+.Arhamseva .form-group .list{
 	border-radius: 4px;
 }
-.appointment .form-group .list li{
+.Arhamseva .form-group .list li{
 	color:#757575;
 	border-radius:0;
 }
-.appointment .form-group .list li.selected{
+.Arhamseva .form-group .list li.selected{
 	color:#757575;
 	font-weight:400;
 }
-.appointment .form-group .list li:hover {
+.Arhamseva .form-group .list li:hover {
 	color:#fff;
 	background: #1A76D1;
 }
-.appointment .appointment-image{}
-.appointment.single-page .button .btn{
+.Arhamseva .Arhamseva-image{}
+.Arhamseva.single-page .button .btn{
 	width:100%;
 }
-.appointment .button .btn{
+.Arhamseva .button .btn{
 	font-weight:500;
 }
-.appointment .button .btn:hover{
+.Arhamseva .button .btn:hover{
 	color:#fff;
 }
-.appointment .form p{
+.Arhamseva .form p{
 	margin-top: 10px;
 	color:#868686;
 }
-.appointment.single-page .work-hour{
+.Arhamseva.single-page .work-hour{
 	background:#1A76D1;
 	padding: 40px;
 	box-shadow: 0px 0px 10px #00000024;
 	border-radius: 5px;
 }
-.appointment.single-page .work-hour h3 {
+.Arhamseva.single-page .work-hour h3 {
 	font-size: 25px;
 	display: block;
 	font-weight:600;
 	margin-bottom: 20px;
 	color:#fff;
 }
-.appointment.single-page .time-sidual{
+.Arhamseva.single-page .time-sidual{
 	margin-top:15px;
 }
-.appointment.single-page .time-sidual{
+.Arhamseva.single-page .time-sidual{
 	overflow:hidden;
 }
-.appointment.single-page .time-sidual li {
+.Arhamseva.single-page .time-sidual li {
 	display: block;
 	color: #fff;
 	width: 100%;
 	margin-bottom: 10px;
 }
-.appointment.single-page .time-sidual li span{
+.Arhamseva.single-page .time-sidual li span{
 	display:inline-block;
 	float:right;
 }
-.appointment.single-page .day-head .time {
+.Arhamseva.single-page .day-head .time {
 	font-weight: 400;
 	float: right;
 }
 /*==========================
-	End Appointment CSS
+	End Arhamseva CSS
 ============================*/
 
 /*====================
