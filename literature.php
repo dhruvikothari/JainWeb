@@ -1,6 +1,6 @@
 <!doctype html>
 <html class="no-js" lang="zxx">
-    <head>
+	<head>
         <!-- Meta Tags -->
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,7 +10,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		
 		<!-- Title -->
-        <title>404</title>
+        <title>Manhar Plot Jain Sangh</title>
 		
 		<!-- Favicon -->
         <link rel="icon" href="img/favicon.png">
@@ -41,8 +41,40 @@
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="css/responsive.css">
-		
+		<style>
+        /* Styles for Language Blocks */
+        .literature {
+            padding: 50px 0;
+            background-color: #f9f9f9;
+        }
+
+        .block {
+            background-color: #1A76D1; /* Blue color */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s ease-in-out;
+            margin-bottom: 20px;
+        }
+
+        .block h2 {
+            color: #fff; /* White text color */
+            margin-bottom: 10px;
+        }
+
+        .block p {
+            color: #ccc; /* Light gray text color */
+        }
+
+        /* Hover effect for the blocks */
+        .block:hover {
+            background-color: #0056b3; /* Darker shade of blue on hover */
+            transform: scale(1.05);
+        }
+    </style>
     </head>
+	
     <body>
 	
 		<!-- Preloader -->
@@ -60,7 +92,6 @@
             </div>
         </div>
         <!-- End Preloader -->
-		
 	
 		<!-- Header Area -->
 		<header class="header" >
@@ -111,12 +142,15 @@
 									<nav class="navigation">
 										<ul class="nav menu">
 											<li class="active"><a href="index.php">Home</a>
-											</li>
-											<li><a href="#">Members </a></li>
-											<li><a href="mastiji_avaibility.php"> Masatiji Availability</a></li>
-											<li><a href="literature.php">Literature <i class="icofont-rounded-down"></i></a>
 												<!-- <ul class="dropdown">
-													<li><a href="404.php">In progress</a></li>
+													<li><a href="index.php">Home Page 1</a></li>
+												</ul> -->
+											</li>
+											<li><a href="members.php">Members </a></li>
+											<li><a href="mastiji_avaibility.php">Masatiji Availability</a></li>
+											<li><a href="literature.php">Literature</a>
+												<!-- <ul class="dropdown">
+													<li><a href="404.php">In Progress</a></li>
 												</ul> -->
 											</li>
 											<!-- <li><a href="#">Blogs <i class="icofont-rounded-down"></i></a>
@@ -142,27 +176,53 @@
 			<!--/ End Header Inner -->
 		</header>
 		<!-- End Header Area -->
-		
-		<!-- Error Page -->
-		<section class="error-page section">
+	
+		<!-- Breadcrumbs -->
+		<div class="breadcrumbs overlay">
 			<div class="container">
-				<div class="row">
-					<div class="col-lg-6 offset-lg-3 col-12">
-						<!-- Error Inner -->
-						<div class="error-inner">
-							<h1>404<span>Oop's  sorry we can't find that page!</span></h1>
-							<!-- <p>Aenean eget sollicitudin lorem, et pretium felis. Nullam euismod diam libero, sed dapibus leo laoreet ut. Suspendisse potenti. Phasellus urna lacus</p> -->
-							<form class="search-form">
-								<input placeholder="Search from Here" type="text">
-								<button class="btn" type="submit"><i class="fa fa-search"></i></button>
-							</form>
+				<div class="bread-inner">
+					<div class="row">
+						<div class="col-12">
+							<h2>Literature</h2>
+							<ul class="bread-list">
+								<li><a href="index.php">Home</a></li>
+								<li><i class="icofont-simple-right"></i></li>
+								<li class="active">Literature</li>
+							</ul>
 						</div>
-						<!--/ End Error Inner -->
 					</div>
 				</div>
 			</div>
-		</section>	
-		<!--/ End Error Page -->
+		</div>
+		<!-- End Breadcrumbs -->
+	
+		
+<!-- Literature Section -->
+<section class="literature section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-12">
+                <div class="english block">
+				<a href="english.php"><h2>English</h2></a>
+                    <p>Download English pdfs from here.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12">
+                <div class="gujarati block">
+                    <a href="gujarati.php"><h2>Gujarati</h2></a>
+                    <p>અહીંથી ગુજરાતી પીડીએફ ડાઉનલોડ કરો.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12">
+                <div class="hindi block">
+				<a href="hindi.php"><h2>Hindi</h2></a>
+                    <p>यहां से हिंदी पीडीएफ़ डाउनलोड करें।</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Literature Section -->
 		
 		<!-- Footer Area -->
 		<footer id="footer" class="footer ">
@@ -173,7 +233,7 @@
 						<div class="col-lg-3 col-md-6 col-12">
 							<div class="single-footer">
 								<h2>About Us</h2>
-								<!-- <p>Lorem ipsum dolor sit am consectetur adipisicing elit do eiusmod tempor incididunt ut labore dolore magna.</p> -->
+								<p>Lorem ipsum dolor sit am consectetur adipisicing elit do eiusmod tempor incididunt ut labore dolore magna.</p>
 								<!-- Social -->
 								<ul class="social">
 									<li><a href="#"><i class="icofont-facebook"></i></a></li>
@@ -194,11 +254,11 @@
 											<li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Home</a></li>
 											<li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>About Us</a></li>
 											<li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Services</a></li>
-											<li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Our Events</a></li>
+											<li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Our Cases</a></li>
 											<li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Other Links</a></li>	
 										</ul>
 									</div>
-									<!-- <div class="col-lg-6 col-md-6 col-12">
+									<div class="col-lg-6 col-md-6 col-12">
 										<ul>
 											<li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Consuling</a></li>
 											<li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Finance</a></li>
@@ -206,25 +266,25 @@
 											<li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>FAQ</a></li>
 											<li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Contact Us</a></li>	
 										</ul>
-									</div> -->
+									</div>
 								</div>
 							</div>
 						</div>
 						<div class="col-lg-3 col-md-6 col-12">
 							<div class="single-footer">
 								<h2>Open Hours</h2>
-								<!-- <p>Lorem ipsum dolor sit ame consectetur adipisicing elit do eiusmod tempor incididunt.</p> -->
+								<p>Lorem ipsum dolor sit ame consectetur adipisicing elit do eiusmod tempor incididunt.</p>
 								<ul class="time-sidual">
-									<li class="day">Monday - Friday <span>8.00-18.30</span></li>
-									<li class="day">Saturday <span>8.00-18.30</span></li>
-									<!-- <li class="day">Monday - Thusday <span>9.00-15.00</span></li> -->
+									<li class="day">Monday - Fridayp <span>8.00-20.00</span></li>
+									<li class="day">Saturday <span>9.00-18.30</span></li>
+									<li class="day">Monday - Thusday <span>9.00-15.00</span></li>
 								</ul>
 							</div>
 						</div>
 						<div class="col-lg-3 col-md-6 col-12">
 							<div class="single-footer">
 								<h2>Newsletter</h2>
-								<!-- <p>subscribe to our newsletter to get allour news in your inbox.. Lorem ipsum dolor sit amet, consectetur adipisicing elit,</p> -->
+								<p>subscribe to our newsletter to get allour news in your inbox.. Lorem ipsum dolor sit amet, consectetur adipisicing elit,</p>
 								<form action="mail/mail.php" method="get" target="_blank" class="newsletter-inner">
 									<input name="email" placeholder="Email Address" class="common-input" onfocus="this.placeholder = ''"
 										onblur="this.placeholder = 'Your email address'" required="" type="email">
@@ -237,7 +297,7 @@
 			</div>
 			<!--/ End Footer Top -->
 			<!-- Copyright -->
-			<!-- <div class="copyright">
+			<div class="copyright">
 				<div class="container">
 					<div class="row">
 						<div class="col-lg-12 col-md-12 col-12">
@@ -247,7 +307,7 @@
 						</div>
 					</div>
 				</div>
-			</div> -->
+			</div>
 			<!--/ End Copyright -->
 		</footer>
 		<!--/ End Footer Area -->

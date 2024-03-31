@@ -13,7 +13,7 @@
         <title>Manhar Plot Jain Sangh</title>
 		
 		<!-- Favicon -->
-        <!-- <link rel="icon" href="img/favicon.png"> -->
+        <link rel="icon" href="img/favicon.png">
 		
 		<!-- Google Fonts -->
 		<link href="https://fonts.googleapis.com/css?family=Poppins:200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
@@ -108,22 +108,6 @@
             </div>
         </div>
         <!-- End Preloader -->
-		
-		<!-- Get Pro Button -->
-		<!-- <ul class="pro-features">
-			<a class="get-pro" href="#">Get Pro</a>
-			<li class="big-title">Pro Version Available on Themeforest</li>
-			<li class="title">Pro Version Features</li>
-			<li>2+ premade home pages</li>
-			<li>20+ html pages</li>
-			<li>Color Plate With 12+ Colors</li>
-			<li>Sticky Header / Sticky Filters</li>
-			<li>Working Contact Form With Google Map</li>
-			<div class="button">
-				<a href="http://preview.themeforest.net/item/mediplus-medical-and-doctor-html-template/full_screen_preview/26665910?_ga=2.145092285.888558928.1591971968-344530658.1588061879" target="_blank" class="btn">Pro Version Demo</a>
-				<a href="https://themeforest.net/item/mediplus-medical-and-doctor-html-template/26665910" target="_blank" class="btn">Buy Pro Version</a>
-			</div>
-		</ul> -->
 	
 		<!-- Header Area -->
 		<header class="header" >
@@ -134,7 +118,7 @@
 						<div class="col-lg-6 col-md-5 col-12">
 							<!-- Contact -->
 							<ul class="top-link">
-								<li><a href="#">About</a></li>
+								<li><a href="aboutus.php">About</a></li>
 								<li><a href="members.php">Members</a></li>
 								<li><a href="contact.php">Contact</a></li>
 								<li><a href="#">FAQ</a></li>
@@ -144,7 +128,7 @@
 						<div class="col-lg-6 col-md-7 col-12">
 							<!-- Top Contact -->
 							<ul class="top-contact">
-								<li><i class="fa fa-phone"></i>+90123456789</li>
+								<li><i class="fa fa-phone"></i>+91 98253 17333</li>
 								<li><i class="fa fa-envelope"></i><a href="mailto:support@yourmail.com">jainsangh@gmail.com</a></li>
 							</ul>
 							<!-- End Top Contact -->
@@ -179,11 +163,11 @@
 												</ul> -->
 											</li>
 											<li><a href="members.php">Members </a></li>
-											<li><a href="#">Masatiji Availability</a></li>
-											<li><a href="#">Literature <i class="icofont-rounded-down"></i></a>
-												<ul class="dropdown">
+											<li><a href="mastiji_avaibility.php">Masatiji Availability</a></li>
+											<li><a href="literature.php">Literature</a>
+												<!-- <ul class="dropdown">
 													<li><a href="404.php">In Progress</a></li>
-												</ul>
+												</ul> -->
 											</li>
 											<!-- <li><a href="#">Blogs <i class="icofont-rounded-down"></i></a>
 												<ul class="dropdown">
@@ -198,7 +182,7 @@
 							</div>
 							<div class="col-lg-2 col-12">
 								<div class="get-quote">
-									<a href="appointment.php" class="btn">Book Arhamseva</a>
+									<a href="https://arham.org/" class="btn">Arhamseva</a>
 								</div>
 							</div>
 						</div>

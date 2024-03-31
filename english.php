@@ -1,6 +1,6 @@
 <!doctype html>
 <html class="no-js" lang="zxx">
-    <head>
+	<head>
         <!-- Meta Tags -->
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,7 +10,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		
 		<!-- Title -->
-        <title>404</title>
+        <title>Manhar Plot Jain Sangh</title>
 		
 		<!-- Favicon -->
         <link rel="icon" href="img/favicon.png">
@@ -41,8 +41,56 @@
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="css/responsive.css">
-		
+		<style>
+        /* Styles for Upload Form */
+        .upload-container {
+            margin-top: 50px;
+        }
+        .upload-container h2 {
+            color: #1A76D1; /* Blue color for heading */
+        }
+        .upload-form label {
+            color: #333; /* Dark text color for labels */
+        }
+        .upload-form .btn-primary {
+            background-color: #1A76D1; /* Blue color for button */
+            border-color: #1A76D1; /* Blue border color for button */
+        }
+        .upload-form .btn-primary:hover {
+            background-color: #0056b3; /* Darker shade of blue on hover */
+            border-color: #0056b3; /* Darker shade of blue border on hover */
+        }
+
+        /* Styles for Download Table */
+        .download-container {
+            margin-top: 50px;
+        }
+        .download-container h2 {
+            color: #1A76D1; /* Blue color for heading */
+        }
+        .download-table th {
+            background-color: #1A76D1; /* Blue color for table header */
+            color: #fff; /* White text color for table header */
+        }
+        .download-table tbody td {
+            color: #333; /* Dark text color for table body */
+        }
+        .download-table .btn-primary {
+            background-color: #1A76D1; /* Blue color for button */
+            border-color: #1A76D1; /* Blue border color for button */
+        }
+        .download-table .btn-primary:hover {
+            background-color: #0056b3; /* Darker shade of blue on hover */
+            border-color: #0056b3; /* Darker shade of blue border on hover */
+        }
+		.download-table tbody td a {
+        color: blue; /* Blue color for download link */
+        text-decoration: underline; /* Underline for download link */
+    }
+    </style>
+
     </head>
+	
     <body>
 	
 		<!-- Preloader -->
@@ -60,7 +108,6 @@
             </div>
         </div>
         <!-- End Preloader -->
-		
 	
 		<!-- Header Area -->
 		<header class="header" >
@@ -111,12 +158,15 @@
 									<nav class="navigation">
 										<ul class="nav menu">
 											<li class="active"><a href="index.php">Home</a>
-											</li>
-											<li><a href="#">Members </a></li>
-											<li><a href="mastiji_avaibility.php"> Masatiji Availability</a></li>
-											<li><a href="literature.php">Literature <i class="icofont-rounded-down"></i></a>
 												<!-- <ul class="dropdown">
-													<li><a href="404.php">In progress</a></li>
+													<li><a href="index.php">Home Page 1</a></li>
+												</ul> -->
+											</li>
+											<li><a href="members.php">Members </a></li>
+											<li><a href="mastiji_avaibility.php">Masatiji Availability</a></li>
+											<li><a href="literature.php">Literature</a>
+												<!-- <ul class="dropdown">
+													<li><a href="404.php">In Progress</a></li>
 												</ul> -->
 											</li>
 											<!-- <li><a href="#">Blogs <i class="icofont-rounded-down"></i></a>
@@ -142,27 +192,66 @@
 			<!--/ End Header Inner -->
 		</header>
 		<!-- End Header Area -->
-		
-		<!-- Error Page -->
-		<section class="error-page section">
+	
+		<!-- Breadcrumbs -->
+		<div class="breadcrumbs overlay">
 			<div class="container">
-				<div class="row">
-					<div class="col-lg-6 offset-lg-3 col-12">
-						<!-- Error Inner -->
-						<div class="error-inner">
-							<h1>404<span>Oop's  sorry we can't find that page!</span></h1>
-							<!-- <p>Aenean eget sollicitudin lorem, et pretium felis. Nullam euismod diam libero, sed dapibus leo laoreet ut. Suspendisse potenti. Phasellus urna lacus</p> -->
-							<form class="search-form">
-								<input placeholder="Search from Here" type="text">
-								<button class="btn" type="submit"><i class="fa fa-search"></i></button>
-							</form>
+				<div class="bread-inner">
+					<div class="row">
+						<div class="col-12">
+							<h2>English Literature</h2>
+							<ul class="bread-list">
+								<li><a href="index.php">Home</a></li>
+								<li><i class="icofont-simple-right"></i></li>
+								<li class="active">Literature</li>
+                                <li><i class="icofont-simple-right"></i></li>
+								<li class="active">English Literature</li>
+							</ul>
 						</div>
-						<!--/ End Error Inner -->
 					</div>
 				</div>
 			</div>
-		</section>	
-		<!--/ End Error Page -->
+		</div>
+		<!-- End Breadcrumbs -->
+
+<!-- Download Table -->
+<div class="container download-container">
+    <h2>Uploaded Files</h2>
+    <table class="table table-bordered table-striped download-table">
+        <thead>
+            <tr>
+                <th>File Name</th>
+                <th>File Size</th>
+                <th>File Type</th>
+                <th>Download</th>
+            </tr>
+        </thead>
+        <tbody>
+            <?php
+            // Directory containing PDF files
+            $pdf_directory = 'english/';
+
+            // Get all PDF files in the directory
+            $pdf_files = glob($pdf_directory . '*.pdf');
+
+            // Iterate through each PDF file
+            foreach ($pdf_files as $pdf_file) {
+                $file_name = basename($pdf_file);
+                $file_size = filesize($pdf_file);
+                $file_type = pathinfo($pdf_file, PATHINFO_EXTENSION);
+                ?>
+                <tr>
+                    <td><?php echo $file_name; ?></td>
+                    <td><?php echo $file_size; ?> bytes</td>
+                    <td><?php echo $file_type; ?></td>
+                    <td><a href="<?php echo $pdf_file; ?>" download>Download</a></td>
+                </tr>
+                <?php
+            }
+            ?>
+        </tbody>
+    </table>
+</div>
 		
 		<!-- Footer Area -->
 		<footer id="footer" class="footer ">
@@ -173,7 +262,7 @@
 						<div class="col-lg-3 col-md-6 col-12">
 							<div class="single-footer">
 								<h2>About Us</h2>
-								<!-- <p>Lorem ipsum dolor sit am consectetur adipisicing elit do eiusmod tempor incididunt ut labore dolore magna.</p> -->
+								<p>Lorem ipsum dolor sit am consectetur adipisicing elit do eiusmod tempor incididunt ut labore dolore magna.</p>
 								<!-- Social -->
 								<ul class="social">
 									<li><a href="#"><i class="icofont-facebook"></i></a></li>
@@ -194,11 +283,11 @@
 											<li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Home</a></li>
 											<li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>About Us</a></li>
 											<li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Services</a></li>
-											<li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Our Events</a></li>
+											<li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Our Cases</a></li>
 											<li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Other Links</a></li>	
 										</ul>
 									</div>
-									<!-- <div class="col-lg-6 col-md-6 col-12">
+									<div class="col-lg-6 col-md-6 col-12">
 										<ul>
 											<li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Consuling</a></li>
 											<li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Finance</a></li>
@@ -206,25 +295,25 @@
 											<li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>FAQ</a></li>
 											<li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Contact Us</a></li>	
 										</ul>
-									</div> -->
+									</div>
 								</div>
 							</div>
 						</div>
 						<div class="col-lg-3 col-md-6 col-12">
 							<div class="single-footer">
 								<h2>Open Hours</h2>
-								<!-- <p>Lorem ipsum dolor sit ame consectetur adipisicing elit do eiusmod tempor incididunt.</p> -->
+								<p>Lorem ipsum dolor sit ame consectetur adipisicing elit do eiusmod tempor incididunt.</p>
 								<ul class="time-sidual">
-									<li class="day">Monday - Friday <span>8.00-18.30</span></li>
-									<li class="day">Saturday <span>8.00-18.30</span></li>
-									<!-- <li class="day">Monday - Thusday <span>9.00-15.00</span></li> -->
+									<li class="day">Monday - Fridayp <span>8.00-20.00</span></li>
+									<li class="day">Saturday <span>9.00-18.30</span></li>
+									<li class="day">Monday - Thusday <span>9.00-15.00</span></li>
 								</ul>
 							</div>
 						</div>
 						<div class="col-lg-3 col-md-6 col-12">
 							<div class="single-footer">
 								<h2>Newsletter</h2>
-								<!-- <p>subscribe to our newsletter to get allour news in your inbox.. Lorem ipsum dolor sit amet, consectetur adipisicing elit,</p> -->
+								<p>subscribe to our newsletter to get allour news in your inbox.. Lorem ipsum dolor sit amet, consectetur adipisicing elit,</p>
 								<form action="mail/mail.php" method="get" target="_blank" class="newsletter-inner">
 									<input name="email" placeholder="Email Address" class="common-input" onfocus="this.placeholder = ''"
 										onblur="this.placeholder = 'Your email address'" required="" type="email">
@@ -237,7 +326,7 @@
 			</div>
 			<!--/ End Footer Top -->
 			<!-- Copyright -->
-			<!-- <div class="copyright">
+			<div class="copyright">
 				<div class="container">
 					<div class="row">
 						<div class="col-lg-12 col-md-12 col-12">
@@ -247,7 +336,7 @@
 						</div>
 					</div>
 				</div>
-			</div> -->
+			</div>
 			<!--/ End Copyright -->
 		</footer>
 		<!--/ End Footer Area -->
