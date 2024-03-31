@@ -10,7 +10,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		
 		<!-- Title -->
-        <title>Manhar Plot Jain Sangh</title>
+        <title>Literature</title>
 		
 		<!-- Favicon -->
         <link rel="icon" href="img/favicon.png">
@@ -85,7 +85,6 @@
 
                 <div class="indicator"> 
                     <svg width="16px" height="12px">
-                        <polyline id="back" points="1 6 4 6 6 11 10 1 12 6 15 6"></polyline>
                         <polyline id="front" points="1 6 4 6 6 11 10 1 12 6 15 6"></polyline>
                     </svg>
                 </div>

@@ -358,16 +358,16 @@
 					<div class="col-lg-12 col-12">
 						<div class="owl-carousel portfolio-slider">
 							<div class="single-pf">
-								<img src="img/pf1.jpg" alt="#">
+								<img src="img/pf11.jpg" alt="#">
 							</div>
 							<div class="single-pf">
-								<img src="img/pf2.jpg" alt="#">
+								<img src="img/pf12.jpg" alt="#">
 							</div>
 							<div class="single-pf">
-								<img src="img/pf3.jpg" alt="#">
+								<img src="img/pf13.jpg" alt="#">
 							</div>
 							<div class="single-pf">
-								<img src="img/pf4.jpg" alt="#">
+								<img src="img/pf9.jpg" alt="#">
 							</div>
 							<div class="single-pf">
 								<img src="img/pf5.jpg" alt="#">

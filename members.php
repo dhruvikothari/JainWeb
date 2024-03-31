@@ -13,7 +13,7 @@
         <title>Members</title>
 		
 		<!-- Favicon -->
-        <!-- <link rel="icon" href="img/favicon.png"> -->
+        <link rel="icon" href="img/favicon.png">
 		
 		<!-- Google Fonts -->
 		<link href="https://fonts.googleapis.com/css?family=Poppins:200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
@@ -103,7 +103,6 @@
 
                 <div class="indicator"> 
                     <svg width="16px" height="12px">
-                        <polyline id="back" points="1 6 4 6 6 11 10 1 12 6 15 6"></polyline>
                         <polyline id="front" points="1 6 4 6 6 11 10 1 12 6 15 6"></polyline>
                     </svg>
                 </div>
@@ -122,9 +121,9 @@
 						<div class="col-lg-6 col-md-5 col-12">
 							<!-- Contact -->
 							<ul class="top-link">
-								<li><a href="#">About</a></li>
-								<li><a href="#">Members</a></li>
-								<li><a href="#">Contact</a></li>
+								<li><a href="aboutus.php">About</a></li>
+								<li><a href="members.php">Members</a></li>
+								<li><a href="contact.php">Contact</a></li>
 								<li><a href="#">FAQ</a></li>
 							</ul>
 							<!-- End Contact -->
@@ -132,7 +131,7 @@
 						<div class="col-lg-6 col-md-7 col-12">
 							<!-- Top Contact -->
 							<ul class="top-contact">
-								<li><i class="fa fa-phone"></i>+880 1234 56789</li>
+								<li><i class="fa fa-phone"></i>+91 98253 17333</li>
 								<li><i class="fa fa-envelope"></i><a href="mailto:support@yourmail.com">jainsangh@gmail.com</a></li>
 							</ul>
 							<!-- End Top Contact -->
@@ -164,11 +163,11 @@
 										<ul class="nav menu">
 											<li class="active"><a href="index.php">Home</a></li>
 											<li><a href="#">Members </a></li>
-											<li><a href="#">Masatiji Availability </a></li>
-											<li><a href="#">Literature <i class="icofont-rounded-down"></i></a>
-												<ul class="dropdown">
+											<li><a href="mastiji_avaibility.php">Masatiji Availability </a></li>
+											<li><a href="literature.php">Literature</a>
+												<!-- <ul class="dropdown">
 													<li><a href="404.html">In progress</a></li>
-												</ul>
+												</ul> -->
 											</li>
 											<!-- <li><a href="#">Blogs <i class="icofont-rounded-down"></i></a>
 												<ul class="dropdown">
@@ -183,7 +182,7 @@
 							</div>
 							<div class="col-lg-2 col-12">
 								<div class="get-quote">
-									<a href="appointment.html" class="btn">Book Arhamseva</a>
+									<a href="https://arham.org/" class="btn">Arhamseva</a>
 								</div>
 							</div>
 						</div>
