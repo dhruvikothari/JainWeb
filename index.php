@@ -341,7 +341,7 @@
 		</div>
 		<!--/ End Fun-facts -->
 		
-		<!-- Start portfolio -->
+		<!-- Start Event Gallery -->
 		<section class="portfolio section" >
 			<div class="container">
 				<div class="row">
@@ -398,7 +398,7 @@
 				</div>
 			</div>
 		</section>
-		<!--/ End portfolio -->
+		<!--/ End Event Gallery -->
 		
 		
 		<!-- Start Newsletter Area -->
