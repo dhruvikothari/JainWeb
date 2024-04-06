@@ -187,7 +187,7 @@
 										</div>
 										<div class="col-lg-6">
 											<div class="form-group">
-												<input type="email" name="email" placeholder="Email" required="">
+												<input type="email" name="email" placeholder="Email" required="" id="email">
 											</div>
 										</div>
 										<div class="col-lg-6">
@@ -345,7 +345,12 @@
 			<!--/ End Copyright -->
 		</footer>
 		<!--/ End Footer Area -->
-		
+		<script>
+    document.getElementById("myForm").addEventListener("submit", function(event) {
+        var emailField = document.getElementById("email");
+        emailField.value = emailField.value.toLowerCase(); // Convert email input to lowercase
+    });
+</script>
 		<!-- jquery Min JS -->
         <script src="js/jquery.min.js"></script>
 		<!-- jquery Migrate JS -->

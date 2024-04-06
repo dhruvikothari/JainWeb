@@ -10,7 +10,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		
 		<!-- Title -->
-        <title>Mediplus - Free Medical and Doctor Directory HTML Template.</title>
+        <title>Committee</title>
 		
 		<!-- Favicon -->
         <link rel="icon" href="img/favicon.png">
@@ -41,7 +41,45 @@
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="css/responsive.css">
-		
+		<style>
+            .committee-panel {
+                padding: 50px 0;
+            }
+
+            .committee-section {
+                margin-bottom: 30px;
+            }
+
+            .committee-section h2 {
+                text-align: center;
+                margin-bottom: 20px;
+            }
+
+            .committee-row {
+                display: flex;
+                justify-content: space-between;
+            }
+
+            .committee-member {
+                text-align: center;
+            }
+
+            .committee-member img {
+                width: 150px;
+                height: 150px;
+                border-radius: 50%;
+                margin-bottom: 10px;
+            }
+
+            .committee-member h3 {
+                font-size: 18px;
+                margin-bottom: 5px;
+            }
+
+            .committee-member p {
+                font-size: 14px;
+            }
+        </style>
     </head>
     <body>
 	
@@ -53,30 +91,13 @@
 
                 <div class="indicator"> 
                     <svg width="16px" height="12px">
-                        <polyline id="back" points="1 6 4 6 6 11 10 1 12 6 15 6"></polyline>
                         <polyline id="front" points="1 6 4 6 6 11 10 1 12 6 15 6"></polyline>
                     </svg>
                 </div>
             </div>
         </div>
         <!-- End Preloader -->
-		
-		<!-- Get Pro Button -->
-		<ul class="pro-features">
-			<a class="get-pro" href="#">Get Pro</a>
-			<li class="big-title">Pro Version Available on Themeforest</li>
-			<li class="title">Pro Version Features</li>
-			<li>2+ premade home pages</li>
-			<li>20+ html pages</li>
-			<li>Color Plate With 12+ Colors</li>
-			<li>Sticky Header / Sticky Filters</li>
-			<li>Working Contact Form With Google Map</li>
-			<div class="button">
-				<a href="http://preview.themeforest.net/item/mediplus-medical-and-doctor-html-template/full_screen_preview/26665910?_ga=2.145092285.888558928.1591971968-344530658.1588061879" target="_blank" class="btn">Pro Version Demo</a>
-				<a href="https://themeforest.net/item/mediplus-medical-and-doctor-html-template/26665910" target="_blank" class="btn">Buy Pro Version</a>
-			</div>
-		</ul>
-	
+
 		<!-- Header Area -->
 		<header class="header" >
 			<!-- Topbar -->
@@ -86,9 +107,9 @@
 						<div class="col-lg-6 col-md-5 col-12">
 							<!-- Contact -->
 							<ul class="top-link">
-								<li><a href="#">About</a></li>
-								<li><a href="#">Doctors</a></li>
-								<li><a href="#">Contact</a></li>
+								<li><a href="aboutus.php">About</a></li>
+								<li><a href="members.php">Members</a></li>
+								<li><a href="contact.php">Contact</a></li>
 								<li><a href="#">FAQ</a></li>
 							</ul>
 							<!-- End Contact -->
@@ -96,8 +117,8 @@
 						<div class="col-lg-6 col-md-7 col-12">
 							<!-- Top Contact -->
 							<ul class="top-contact">
-								<li><i class="fa fa-phone"></i>+880 1234 56789</li>
-								<li><i class="fa fa-envelope"></i><a href="mailto:support@yourmail.com">support@yourmail.com</a></li>
+								<li><i class="fa fa-phone"></i>+91 98253 17333</li>
+								<li><i class="fa fa-envelope"></i><a href="mailto:support@yourmail.com">jainsangh@gmail.com</a></li>
 							</ul>
 							<!-- End Top Contact -->
 						</div>
@@ -113,7 +134,7 @@
 							<div class="col-lg-3 col-md-3 col-12">
 								<!-- Start Logo -->
 								<div class="logo">
-									<a href="index.html"><img src="img/logo.png" alt="#"></a>
+									<a href="index.php"><img src="img/logo.png" alt="#"></a>
 								</div>
 								<!-- End Logo -->
 								<!-- Mobile Nav -->
@@ -125,24 +146,22 @@
 								<div class="main-menu">
 									<nav class="navigation">
 										<ul class="nav menu">
-											<li class="active"><a href="#">Home <i class="icofont-rounded-down"></i></a>
-												<ul class="dropdown">
-													<li><a href="index.html">Home Page 1</a></li>
-												</ul>
+											<li class="active"><a href="index.php">Home</a>
+												
 											</li>
-											<li><a href="#">Doctos </a></li>
-											<li><a href="#">Services </a></li>
-											<li><a href="#">Pages <i class="icofont-rounded-down"></i></a>
-												<ul class="dropdown">
-													<li><a href="404.html">404 Error</a></li>
-												</ul>
+											<li><a href="members.php">Members </a></li>
+											<li><a href="mastiji_avaibility.php">Masatiji Availability </a></li>
+											<li><a href="literature.php">Literature</a>
+												<!-- <ul class="dropdown">
+													<li><a href="404.php">In progress</a></li>
+												</ul> -->
 											</li>
-											<li><a href="#">Blogs <i class="icofont-rounded-down"></i></a>
+											<!-- <li><a href="#">Blogs <i class="icofont-rounded-down"></i></a>
 												<ul class="dropdown">
-													<li><a href="blog-single.html">Blog Details</a></li>
+													<li><a href="blog-single.php">Blog Details</a></li>
 												</ul>
-											</li>
-											<li><a href="contact.html">Contact Us</a></li>
+											</li> -->
+											<li><a href="contact.php">Contact Us</a></li>
 										</ul>
 									</nav>
 								</div>
@@ -150,7 +169,7 @@
 							</div>
 							<div class="col-lg-2 col-12">
 								<div class="get-quote">
-									<a href="appointment.html" class="btn">Book Appointment</a>
+									<a href="https://arham.org/" class="btn">Arhamseva</a>
 								</div>
 							</div>
 						</div>
@@ -167,11 +186,11 @@
 				<div class="bread-inner">
 					<div class="row">
 						<div class="col-12">
-							<h2>Portfolio Details</h2>
+							<h2>Committee</h2>
 							<ul class="bread-list">
-								<li><a href="index.html">Home</a></li>
+								<li><a href="index.php">Home</a></li>
 								<li><i class="icofont-simple-right"></i></li>
-								<li class="active">Portfolio Details</li>
+								<li class="active">Committee</li>
 							</ul>
 						</div>
 					</div>
@@ -179,48 +198,56 @@
 			</div>
 		</div>
 		<!-- End Breadcrumbs -->
-	
-		<!-- Start Portfolio Details Area -->
-		<section class="pf-details section">
-			<div class="container">
-				<div class="row">
-					<div class="col-12">
-						<div class="inner-content">
-							<div class="image-slider">
-								<div class="pf-details-slider">
-									<img src="img/call-bg.jpg" alt="#">
-									<img src="img/call-bg.jpg" alt="#">
-									<img src="img/call-bg.jpg" alt="#">
-								</div>
-							</div>
-							<div class="date">
-								<ul>
-									<li><span>Category :</span> Heart Surgery</li>
-									<li><span>Date :</span> April 20, 2019</li>
-									<li><span>Client :</span> Suke Agency</li>
-									<li><span>Ags :</span> Typo</li>
-								</ul>
-							</div>
-							<div class="body-text">
-								<h3>Here is the name of this project here</h3>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor a ti incididunt ut labore et dolore to in magna aliqua. Ut enim ad minim veniam, quis to the in nostrud.abore et dolore magna aliqua uis nostrud.Lorem ipsum dolor sit amet, in a in to in a consectetur.ncididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis to the in nostrud.abore et dolore magna in a aliqua uis nostrud.Lorem ipsum dolor sit amet, in aed do eiusmod</p>
-								<p>ncididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis to the in nostrud.abore et dolore magna to in aliqua uis nostrud.Lorem ipsum dolor sit amet, in aed do eiusmod.ncididunt ut labore et dolore magna aliqua. </p>
-								<p>ncididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis to the in nostrud.abore et dolore magna a aliqua uis nostrud.Lorem ipsum dolor sit amet, in aed do eiusmod.ncididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis to the in nostrud.abore et dolore magna aliqua uis nostrud.Lorem ipsum dolor sit amet, in aed do eiusmod. dolor sit amet, in aed do eiusmod.ncididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis to the in nostrud.abore et dolore magna aliqua uis nostrud.</p>
-								<div class="share">
-									<h4>Share Now -</h4>
-									<ul>
-										<li><a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
-										<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-										<li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-									</ul>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- End Portfolio Details Area -->
+				
+		<!-- Start Committee Pannel -->
+		<section class="committee-panel">
+            <div class="container">
+                <div class="committee-section">
+                    <h2>Trustees</h2>
+                    <div class="committee-row">
+                        <div class="committee-member">
+                            <img src="img/bakulbhai.jpg" alt="Member 1">
+                            <h3>Member Name</h3>
+                            <p>Designation</p>
+                        </div>
+                        <div class="committee-member">
+                            <img src="img/bakulbhai.jpg" alt="Member 2">
+                            <h3>Member Name</h3>
+                            <p>Designation</p>
+                        </div>
+                        <div class="committee-member">
+                            <img src="img/bakulbhai.jpg" alt="Member 3">
+                            <h3>Member Name</h3>
+                            <p>Designation</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="committee-section">
+                    <h2>Sangh Sevak</h2>
+                    <div class="committee-row">
+                        <div class="committee-member">
+                            <img src="img/sevak-1.jpg" alt="Sevak 1">
+                            <h3>Member Name</h3>
+                            <p>Designation</p>
+                        </div>
+                        <div class="committee-member">
+                            <img src="img/sevak-2.jpg" alt="Sevam 2">
+                            <h3>Member Name</h3>
+                            <p>Designation</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="committee-section">
+                    <h2>Team Manharplot</h2>
+                    <!-- <div class="committee-row">
+                        <img src="path_to_group_photo" alt="Team Manharplot">
+                        <p>Subtitle: Team Manharplot</p>
+                    </div> -->
+                </div>
+            </div>
+        </section>
+
+		<!--/ End Committee Pannel -->
 		
 		<!-- Footer Area -->
 		<footer id="footer" class="footer ">
@@ -231,7 +258,7 @@
 						<div class="col-lg-3 col-md-6 col-12">
 							<div class="single-footer">
 								<h2>About Us</h2>
-								<p>Lorem ipsum dolor sit am consectetur adipisicing elit do eiusmod tempor incididunt ut labore dolore magna.</p>
+								<p>Our manharplot jain sangh serves our community and our aim is our guru's convinence.</p>
 								<!-- Social -->
 								<ul class="social">
 									<li><a href="#"><i class="icofont-facebook"></i></a></li>
@@ -250,13 +277,12 @@
 									<div class="col-lg-6 col-md-6 col-12">
 										<ul>
 											<li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Home</a></li>
-											<li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>About Us</a></li>
-											<li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Services</a></li>
-											<li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Our Cases</a></li>
+											<li><a href="aboutus.php"><i class="fa fa-caret-right" aria-hidden="true"></i>About Us</a></li>
+											<li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Masatiji Availability</a></li>
 											<li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Other Links</a></li>	
 										</ul>
 									</div>
-									<div class="col-lg-6 col-md-6 col-12">
+									<!-- <div class="col-lg-6 col-md-6 col-12">
 										<ul>
 											<li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Consuling</a></li>
 											<li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Finance</a></li>
@@ -264,25 +290,23 @@
 											<li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>FAQ</a></li>
 											<li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Contact Us</a></li>	
 										</ul>
-									</div>
+									</div> -->
 								</div>
 							</div>
 						</div>
 						<div class="col-lg-3 col-md-6 col-12">
 							<div class="single-footer">
 								<h2>Open Hours</h2>
-								<p>Lorem ipsum dolor sit ame consectetur adipisicing elit do eiusmod tempor incididunt.</p>
 								<ul class="time-sidual">
-									<li class="day">Monday - Fridayp <span>8.00-20.00</span></li>
-									<li class="day">Saturday <span>9.00-18.30</span></li>
-									<li class="day">Monday - Thusday <span>9.00-15.00</span></li>
+									<li class="day">Monday - Friday <span>8.00-18.30</span></li>
+									<li class="day">Saturday <span>8.00-18.30</span></li>
 								</ul>
 							</div>
 						</div>
 						<div class="col-lg-3 col-md-6 col-12">
 							<div class="single-footer">
 								<h2>Newsletter</h2>
-								<p>subscribe to our newsletter to get allour news in your inbox.. Lorem ipsum dolor sit amet, consectetur adipisicing elit,</p>
+								<p>Subscribe to our newsletter to get allour news in your inbox.</p>
 								<form action="mail/mail.php" method="get" target="_blank" class="newsletter-inner">
 									<input name="email" placeholder="Email Address" class="common-input" onfocus="this.placeholder = ''"
 										onblur="this.placeholder = 'Your email address'" required="" type="email">
@@ -295,7 +319,7 @@
 			</div>
 			<!--/ End Footer Top -->
 			<!-- Copyright -->
-			<div class="copyright">
+			<!-- <div class="copyright">
 				<div class="container">
 					<div class="row">
 						<div class="col-lg-12 col-md-12 col-12">
@@ -305,7 +329,7 @@
 						</div>
 					</div>
 				</div>
-			</div>
+			</div> -->
 			<!--/ End Copyright -->
 		</footer>
 		<!--/ End Footer Area -->
@@ -346,6 +370,12 @@
 		<script src="js/jquery.magnific-popup.min.js"></script>
 		<!-- Counter Up CDN JS -->
 		<script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+		<!-- Google Map API Key JS -->
+		<script src="https://maps.google.com/maps/api/js?key=AIzaSyDGqTyqoPIvYxhn_Sa7ZrK5bENUWhpCo0w"></script>
+		<!-- Gmaps JS -->
+		<script src="js/gmaps.min.js"></script>
+		<!-- Map Active JS -->
+		<script src="js/map-active.js"></script>
 		<!-- Bootstrap JS -->
 		<script src="js/bootstrap.min.js"></script>
 		<!-- Main JS -->

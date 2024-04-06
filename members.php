@@ -373,22 +373,7 @@
 			document.querySelector('.search-form button').addEventListener('click', function() {
 				searchTable();
 			});
-
-			// function searchTable() {
-			// 	var input, filter, table, tr, td, i, txtValue;
-			// 	input = document.getElementById("searchInput");
-			// 	filter = input.value.toUpperCase();
-			// 	table = document.getElementById("membersTable");
-			// 	tr = table.getElementsByTagName("tr");
-
-			// 	for (i = 0; i < tr.length; i++) {
-			// 		td = tr[i].getElementsByTagName("td")[2]; // Index 2 corresponds to the "Firstname" column
-			// 		if (td) {
-			// 			txtValue = td.textContent || td.innerText;
-			// 			tr[i].style.display = (txtValue.toUpperCase().indexOf(filter) > -1) ? "" : "none";
-			// 		}
-			// 	}
-			// }
+			
 			function searchTable() {
 			var input, filter, table, tr, td, i, txtValue;
 			input = document.getElementById("searchInput");

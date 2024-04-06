@@ -277,7 +277,7 @@
 											<li class="day">Monday - Friday <span>8.00-18.30</span></li>
 											<li class="day">Saturday <span>8.00-18.30</span></li>
 										</ul>
-										<a href="#">LEARN MORE<i class="fa fa-long-arrow-right"></i></a>
+										<a href="#" id="scrollToEnd">LEARN MORE<i class="fa fa-long-arrow-right"></i></a>
 									</div>
 								</div>
 							</div>
@@ -515,7 +515,12 @@
 			<!--/ End Copyright -->
 		</footer>
 		<!--/ End Footer Area -->
-		
+		<script>
+			document.getElementById('scrollToEnd').addEventListener('click', function(event) {
+				event.preventDefault(); // Prevent default anchor behavior
+				window.scrollTo(0, document.body.scrollHeight); // Scroll to the end of the page
+			});
+		</script>
 		<!-- jquery Min JS -->
         <script src="js/jquery.min.js"></script>
 		<!-- jquery Migrate JS -->

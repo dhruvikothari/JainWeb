@@ -134,7 +134,7 @@
 							</div>
 							<div class="col-lg-2 col-12">
 								<div class="get-quote">
-									<a href="Paramseva.html" class="btn">Book Paramseva</a>
+									<a href="https://arham.org/" class="btn">Arhamseva</a>
 								</div>
 							</div>
 						</div>
