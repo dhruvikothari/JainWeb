@@ -48,7 +48,7 @@
 			display: inline-block;
 			padding: 10px 20px;
 			margin-top: 20px;
-			background: #1A76D1; /* Green color, you can change this */
+			background: #F7C566; /* Green color, you can change this */
 			color: #fff; /* White text */
 			text-decoration: none;
 			border-radius: 5px;
@@ -56,7 +56,7 @@
 		}
 
 		.join-us-button:hover {
-			background-color: #1A76D1; /* Darker green color on hover */
+			background-color: #F7C566; /* Darker green color on hover */
 			/* 3498db */
 		}
 	</style>

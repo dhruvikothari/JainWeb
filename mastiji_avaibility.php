@@ -46,7 +46,7 @@
 	<style>
         /* Styles for Guru Boxes and Welcome Text */
         .guru-box {
-            background-color: #1A76D1;
+            background-color: #F7C566;
             border: 1px solid #1566C7;
             border-radius: 10px;
             padding: 20px;

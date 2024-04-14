@@ -169,7 +169,7 @@
 		<section class="slider">
 			<div class="hero-slider">
 				<!-- Start Single Slider -->
-				<div class="single-slider" style="background-image:url('img/slider3.png')">
+				<div class="single-slider" style="background-image:url('img/slider3.jpg')">
 					<div class="container">
 						<div class="row">
 							<div class="col-lg-7">
@@ -187,7 +187,7 @@
 				</div>
 				<!-- End Single Slider -->
 				<!-- Start Single Slider -->
-				<div class="single-slider" style="background-image:url('img/slider3.png')">
+				<div class="single-slider" style="background-image:url('img/slider2.jpg')">
 					<div class="container">
 						<div class="row">
 							<div class="col-lg-7">
@@ -205,7 +205,7 @@
 				</div>
 				<!-- Start End Slider -->
 				<!-- Start Single Slider -->
-				<div class="single-slider" style="background-image:url('img/slider3.png')">
+				<div class="single-slider" style="background-image:url('img/slider1.jpg')">
 					<div class="container">
 						<div class="row">
 							<div class="col-lg-7">

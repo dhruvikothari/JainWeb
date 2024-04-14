@@ -59,7 +59,7 @@
 
 			.search-form button {
 				padding: 10px;
-				background-color: #1A76D1;
+				background-color: #F7C566;
 				color: #fff;
 				border: none;
 				border-radius: 5px;
@@ -87,9 +87,39 @@
 			}
 
 			.pagination .active {
-				background-color: #1A76D1;
+				background-color: #F7C566;
 				color: #fff;
 			}
+			/* Responsive table */
+				table {
+					width: 100%;
+					border-collapse: collapse;
+					margin-bottom: 20px;
+				}
+
+				th, td {
+					padding: 8px;
+					text-align: left;
+					border-bottom: 1px solid #ddd;
+				}
+
+				/* Set the font size and padding for table headings */
+				th {
+					font-size: 14px;
+					padding-top: 12px;
+					padding-bottom: 12px;
+				}
+
+				/* Adjust table layout for smaller screens */
+				@media only screen and (max-width: 768px) {
+					table {
+						font-size: 12px;
+					}
+					th, td {
+						padding: 6px;
+					}
+				}
+
 		</style>
 		
     </head>
@@ -397,6 +427,7 @@
 				// Display or hide the row based on whether a match was found
 				tr[i].style.display = found ? "" : "none";
 			}
+			
 		}
 		</script>
 		<!-- jquery Min JS -->

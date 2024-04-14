@@ -46,7 +46,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 
     .block {
-        background-color: #1A76D1; /* Blue color */
+        background-color: #F7C566; /* Blue color */
         padding: 20px;
         border-radius: 10px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -79,7 +79,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 
     h2 {
-        color: #1A76D1;
+        color: #F7C566;
         text-align: center;
         margin-top: 50px;
     }
@@ -113,7 +113,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     button[type="submit"] {
         width: 100%;
         padding: 10px;
-        background-color: #1A76D1;
+        background-color: #F7C566;
         color: #fff;
         border: none;
         border-radius: 5px;

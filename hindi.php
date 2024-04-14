@@ -47,14 +47,14 @@
             margin-top: 50px;
         }
         .upload-container h2 {
-            color: #1A76D1; /* Blue color for heading */
+            color: #F7C566; /* Blue color for heading */
         }
         .upload-form label {
             color: #333; /* Dark text color for labels */
         }
         .upload-form .btn-primary {
-            background-color: #1A76D1; /* Blue color for button */
-            border-color: #1A76D1; /* Blue border color for button */
+            background-color: #F7C566; /* Blue color for button */
+            border-color: #F7C566; /* Blue border color for button */
         }
         .upload-form .btn-primary:hover {
             background-color: #0056b3; /* Darker shade of blue on hover */
@@ -66,18 +66,18 @@
             margin-top: 50px;
         }
         .download-container h2 {
-            color: #1A76D1; /* Blue color for heading */
+            color: #F7C566; /* Blue color for heading */
         }
         .download-table th {
-            background-color: #1A76D1; /* Blue color for table header */
+            background-color: #F7C566; /* Blue color for table header */
             color: #fff; /* White text color for table header */
         }
         .download-table tbody td {
             color: #333; /* Dark text color for table body */
         }
         .download-table .btn-primary {
-            background-color: #1A76D1; /* Blue color for button */
-            border-color: #1A76D1; /* Blue border color for button */
+            background-color: #F7C566; /* Blue color for button */
+            border-color: #F7C566; /* Blue border color for button */
         }
         .download-table .btn-primary:hover {
             background-color: #0056b3; /* Darker shade of blue on hover */

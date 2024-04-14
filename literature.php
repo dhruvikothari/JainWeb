@@ -49,7 +49,7 @@
         }
 
         .block {
-            background-color: #1A76D1; /* Blue color */
+            background-color: #F7C566; /* Blue color */
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
